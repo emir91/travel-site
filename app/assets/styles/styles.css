@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import './base/global.css';
 @import './base/variables.css';
+@import './base/mixins.css';
 @import './modules/_large-hero.css';
 @import './modules/_btn.css';
