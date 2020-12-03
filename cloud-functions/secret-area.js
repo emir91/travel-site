@@ -14,12 +14,12 @@ exports.handler = function(event, context, callback){
 
     if(body.password == "javascript"){
         callback(null, {
-            secretCode: 200,
+            statusCode: 200,
             body: secretContent
         })
     }else{
         callback(null, {
-            secretCode: 401
+            statusCode: 401
         })
     }
 
