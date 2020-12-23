@@ -46,6 +46,11 @@ class StickyHeader{
                 document.querySelectorAll(`.primary-nav a:not(${matchingLink})`).forEach(el => el.classList.remove("is-current-link"))
                 document.querySelector(matchingLink).classList.add("is-current-link");
             }
+            let beginningLink = document.querySelector("#our-beginning-link");
+            if (window.scrollY == 0 && beginningLink.classList.contains("is-current-link")){
+                beginningLink.classList.remove("is-current-link");
+            }
+
         }
     }
 }
